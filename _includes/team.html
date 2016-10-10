@@ -1,0 +1,47 @@
+<div class="tc">
+    <p class="f3">Meet the team</p>
+    <p class="f4">Lorem ipsum dolor sit amet consectetur.</p>
+    <div class="w-100 cf">
+        <p class="f3 tc mb0">Westcoast Branches</p>
+        {% for member in site.people %}
+            {% if member.branch contains "all" %}
+                <div class="fl w-100 pa4 w5">
+                    <div class="h4 w4 w-100">
+                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
+                        <p class="tc tracked ttu ma0 f6">{{ member.position }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="w-60-ns w-100 center cf">
+        <p class="f3 pt4 tc">Wembley</p>
+        {% for member in site.people %}
+            {% if member.branch contains "wembley" %}
+                <div class="fl w-50-ns w-100">
+                    <div>
+                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
+                        <p class="tc tracked ttu ma0 pb4 f6">{{ member.position }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="w-60-ns w-100 center cf">
+        <p class="f3 tc">Carine Glades</p>
+        {% for member in site.people %}
+            {% if member.branch contains "carine" %}
+                <div class="fl w-50-ns w-100">
+                    <div>
+                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
+                        <p class="tc tracked ttu ma0 pb4 f6">{{ member.position }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="f4 mt4 pa4 measure-wide center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</div>
+</div>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+    <body>
+        {% include navbar.html %}
+        <div class="row">
+                <div class="container">
+                        {{ content }}
+                </div>
+        </div>
+        <div class="container col-md-8 col-md-offset-2">
+                {% include enrolmentform.html %}
+        </div>
+    </body>
+</html>

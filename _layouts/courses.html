@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html class="avenir">
+  {% include head.html %}
+    <body>
+        {% include navbar.html %}
+        {% for post in site.posts reversed %}
+            {% if post.categories contains "course" %}
+                <div class='fl cf w-50-ns w-100'>
+                    <div class="w-100 center">
+                        <p class="w-100 f1 tc">{{ post.title }}</p>
+                        <p class="w-100 f2 tc">{{ post.subtitle }}</p>
+                        <div class="mw6 center">
+                            <img class="br2-ns" src="/static/images/courses/{{ post.thumbnail }}" alt="">
+                        </div>
+                        <div class="measure-wide ph4 center">
+                                <p>
+                                        {{ post.content }}
+                                <p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>

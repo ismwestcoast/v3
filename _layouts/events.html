@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% include head.html %}
+<html class="avenir">
+    {% include navbar.html %}
+    <body class="mw9 tc center">
+	    {% for post in site.categories.events %}
+    		{{ post.content }}
+	    {% endfor %}
+    </body>
+</html>

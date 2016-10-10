@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+    <body class="avenir">
+        {% include navbar.html %}
+        <div class="tc w-100 pa2">
+            <div>
+                    {% for post in site.categories.enrolments %}
+                                {{ post.content }}
+                    {% endfor %}
+            </div>
+            {% include enrolmentform.html %}
+        </div>
+    </body>
+</html>

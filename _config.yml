@@ -1,0 +1,43 @@
+title: International School of Music Westcoast
+email: info@ismwestcoast.com.au
+description: "Music education for children of all ages"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://ismwestcoast.com.au" # the base hostname & protocol for your site
+markdown: kramdown
+theme: minima
+# Team names, titles and social links
+people:
+- name: Lynette Telfer
+  pic: 1
+  position: Director
+  branch: all
+
+- name: Stephanie Wigunadharma
+  pic: 2
+  position: Music Teacher
+  branch: wembley
+
+- name: Ricky Lin
+  pic: 3
+  position: Music Teacher
+  branch: wembley
+
+- name: Georgia Harris
+  pic: 4
+  position: Music Teacher
+  branch: wembley
+
+- name: Hannah
+  pic: 8
+  position: Private Piano Teacher
+  branch: wembley
+
+- name: Emily
+  pic: 8
+  position: Music Teacher
+  branch: carine
+
+- name: Holly
+  pic: 7
+  position: Music Teacher
+  branch: carine
