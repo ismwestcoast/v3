@@ -4,7 +4,7 @@ subtitle: Intermediate
 layout: default
 modal-id: 4
 img: intermediate.jpg
-thumbnail: intermediate.jpg
+thumbnail: pianorama.jpg
 alt: image-alt
 category: course
 bgcolour: orange

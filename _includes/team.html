@@ -1,5 +1,5 @@
 <div class="tc">
-    <p class="f3">Meet the team</p>
+    <p class="f3">Our awesome team</p>
     <p class="f4">Lorem ipsum dolor sit amet consectetur.</p>
     <div class="w-100 cf">
         <p class="f3 tc mb0">Westcoast Branches</p>
@@ -7,7 +7,7 @@
             {% if member.branch contains "all" %}
                 <div class="fl w-100 pa4 w5">
                     <div class="h4 w4 w-100">
-                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <img class="db h4 w4 br-100 center" src="{{ "/static/images/team/" | append: member.pic | append: ".jpg" | prepend: site.baseurl }}" alt="{{ member.name }}">
                         <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
                         <p class="tc tracked ttu ma0 f6">{{ member.position }}</p>
                     </div>
@@ -21,7 +21,7 @@
             {% if member.branch contains "wembley" %}
                 <div class="fl w-50-ns w-100">
                     <div>
-                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <img class="db h4 w4 br-100 center" src="{{ "/static/images/team/" | append: member.pic | append: ".jpg" | prepend: site.baseurl }}" alt="{{ member.name }}">
                         <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
                         <p class="tc tracked ttu ma0 pb4 f6">{{ member.position }}</p>
                     </div>
@@ -35,7 +35,7 @@
             {% if member.branch contains "carine" %}
                 <div class="fl w-50-ns w-100">
                     <div>
-                        <img class="db h4 w4 br-100 center" src="/static/images/team/{{ member.pic }}.jpg" alt="{{ member.name }}">
+                        <img class="db h4 w4 br-100 center" src="{{ "/static/images/team/" | append: member.pic | append: ".jpg" | prepend: site.baseurl }}" alt="{{ member.name }}">
                         <p class="tc f4 ma0 h2 pt2">{{ member.name }}</p>
                         <p class="tc tracked ttu ma0 pb4 f6">{{ member.position }}</p>
                     </div>

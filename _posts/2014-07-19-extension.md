@@ -4,7 +4,7 @@ subtitle: Extension
 layout: default
 modal-id: 4
 img: extension.jpg
-thumbnail: extension.jpg
+thumbnail: pianorama.jpg
 alt: image-alt
 category: course
 bgcolour: yellow

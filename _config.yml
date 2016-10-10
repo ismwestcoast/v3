@@ -1,7 +1,7 @@
 title: International School of Music Westcoast
 email: info@ismwestcoast.com.au
 description: "Music education for children of all ages"
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/v3" # the subpath of your site, e.g. /blog
 url: "http://ismwestcoast.com.au" # the base hostname & protocol for your site
 markdown: kramdown
 theme: minima

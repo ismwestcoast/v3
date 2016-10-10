@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html>
-
+<html class="avenir">
   {% include head.html %}
     <body class="avenir">
         {% include navbar.html %}
         <div class="tc w-100 pa2">
-            <div>
+            <div class="measure-wide center">
                     {% for post in site.categories.enrolments %}
                                 {{ post.content }}
                     {% endfor %}
