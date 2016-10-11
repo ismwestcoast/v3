@@ -3,7 +3,7 @@
 <html class="avenir">
     {% include navbar.html %}
     <body class="mw9 tc center">
-        <img class="w-100 br2-ns" src={{ "/static/images/events/concert.jpg" | prepend: site.baseurl}} alt=""/>
+        <img class="measure-wide br2-ns" src={{ "/static/images/events/concert.jpg" | prepend: site.baseurl}} alt=""/>
 	    {% for post in site.categories.events %}
     		{{ post.content }}
 	    {% endfor %}

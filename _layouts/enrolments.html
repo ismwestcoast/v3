@@ -8,8 +8,8 @@
                     {% for post in site.categories.enrolments %}
                                 {{ post.content }}
                     {% endfor %}
+                    {% include enrolmentform.html %}
             </div>
-            {% include enrolmentform.html %}
         </div>
     </body>
 </html>
